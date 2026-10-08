@@ -28,7 +28,10 @@ se muestra una opcion de cerrar sesion para volver a `login.html`
 
 ## Documentacion
 
-El framewrok CSS utilizado fue:
+
+**El framework CSS utilizado fue:**
+
+**CSS3 personalizado** utilizando Flexbox y CSS Grid para la distribución de contenedores, lo que permite un control completo de las clases sin recargar dependencias externas.
 
 Dentro de `login.html` primero deben de hacerse las validaciones en orden para poder iniciar la sesion y entrar a
 `index.html`. Primero se valida el correo antes de entrar a la validacion de contraseña, si el correo no es correcto, no
@@ -107,8 +110,16 @@ falta caracteres a la contraseña ingresada para que sea valida
 ![Validacion contrasena](img/capturaContrasena.png)
 
 Para `sidebar`
+1. Se estructuró dentro de una etiqueta semántica `<aside>` con clase `.sidebar`, conteniendo las opciones de navegación en listas no ordenadas (`<ul>`, `<li>`).
+2. Se implementó un submenú desplegable para la opción **Usuarios** (apartado de Captura) controlado con la clase `.open` mediante JavaScript al hacer clic en el botón correspondiente.
+3. Se integró una clase `.collapsed` con transición CSS suave (`transition: margin-left 0.3s ease`) que oculta o muestra el panel lateral al interactuar con el botón hamburguesa del navbar.
+4. Los enlaces del menú se conectaron mediante eventos en `index.js` para alternar la visualización entre la pantalla de bienvenida y los formularios sin necesidad de recargar la página.
 
 Para `navbar`
+1. Se ubicó en la parte superior dentro de un contenedor `<header class="navbar">` distribuido con Flexbox (`justify-content: space-between`).
+2. A la izquierda se integró el botón hamburguesa (`#btnToggleSidebar`), encargado de alternar la visibilidad del sidebar mediante un escuchador de eventos.
+3. A la derecha se configuró un menú de usuario interactivo (`.user-menu-container`), el cual lee dinámicamente el correo almacenado en `sessionStorage` tras el inicio de sesión y lo muestra en `#userNameDisplay`.
+4. Al hacer clic sobre el nombre del usuario se despliega un dropdown (`.user-dropdown`) con la opción de **Cerrar sesión**, la cual elimina la clave `usuarioLogueado` de `sessionStorage` y redirige nuevamente a `login.html`.
 
 ---
 
