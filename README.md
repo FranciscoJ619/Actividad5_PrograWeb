@@ -112,13 +112,15 @@ falta caracteres a la contraseña ingresada para que sea valida
 Para `sidebar`
 1. Se estructuró dentro de una etiqueta `<aside>` con clase `.sidebar`, conteniendo las opciones para la navegación en listas no ordenadas como `<ul>` y  `<li>`.
 ![sidebar](img/sidebar.png)
-2. Se integró una clase `.collapsed` con transición CSS que oculta o muestra el panel lateral al interactuar con el botón hamburguesa del navbar.
+2. Se integró una clase `.collapsed` que oculta o muestra el panel lateral al interactuar con el botón hamburguesa del navbar.
 ![clase collapsed](img/collapse.png)
 3. Los enlaces del menú se conectaron mediante eventos en `index.js` para alternar la visualización entre la pantalla de bienvenida y los formularios sin necesidad de recargar la página.
 
 Para `navbar`
 1. Se ubicó en la parte superior dentro de un contenedor `<header class="navbar">` distribuido con Flexbox (`justify-content: space-between`).
+![navbar](img/gnar.png)
 2. A la izquierda se integró el botón hamburguesa (`#btnToggleSidebar`), encargado de alternar la visibilidad del sidebar mediante un escuchador de eventos.
+![navbar](img/navbar.png)
 3. A la derecha se configuró un menú de usuario interactivo (`.user-menu-container`), el cual lee dinámicamente el correo almacenado en `sessionStorage` tras el inicio de sesión y lo muestra en `#userNameDisplay`.
 4. Al hacer clic sobre el nombre del usuario se despliega un dropdown (`.user-dropdown`) con la opción de **Cerrar sesión**, la cual elimina la clave `usuarioLogueado` de `sessionStorage` y redirige nuevamente a `login.html`.
 
