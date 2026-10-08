@@ -110,10 +110,11 @@ falta caracteres a la contraseña ingresada para que sea valida
 ![Validacion contrasena](img/capturaContrasena.png)
 
 Para `sidebar`
-1. Se estructuró dentro de una etiqueta semántica `<aside>` con clase `.sidebar`, conteniendo las opciones de navegación en listas no ordenadas (`<ul>`, `<li>`).
-2. Se implementó un submenú desplegable para la opción **Usuarios** (apartado de Captura) controlado con la clase `.open` mediante JavaScript al hacer clic en el botón correspondiente.
-3. Se integró una clase `.collapsed` con transición CSS suave (`transition: margin-left 0.3s ease`) que oculta o muestra el panel lateral al interactuar con el botón hamburguesa del navbar.
-4. Los enlaces del menú se conectaron mediante eventos en `index.js` para alternar la visualización entre la pantalla de bienvenida y los formularios sin necesidad de recargar la página.
+1. Se estructuró dentro de una etiqueta `<aside>` con clase `.sidebar`, conteniendo las opciones para la navegación en listas no ordenadas como `<ul>` y  `<li>`.
+![sidebar](img/sidebar.png)
+2. Se integró una clase `.collapsed` con transición CSS que oculta o muestra el panel lateral al interactuar con el botón hamburguesa del navbar.
+![clase collapsed](img/collapse.png)
+3. Los enlaces del menú se conectaron mediante eventos en `index.js` para alternar la visualización entre la pantalla de bienvenida y los formularios sin necesidad de recargar la página.
 
 Para `navbar`
 1. Se ubicó en la parte superior dentro de un contenedor `<header class="navbar">` distribuido con Flexbox (`justify-content: space-between`).
