@@ -226,7 +226,7 @@ body {
 }
 
 .form-group input:focus {
-  border-color: #2563eb;
+  border-color: #25eb2f;
 }
 
 /* Botones */
@@ -245,12 +245,12 @@ body {
 }
 
 .btn-primary {
-  background-color: #2563eb;
+  background-color: #0fce98;
   color: #ffffff;
 }
 
 .btn-secondary {
-  background-color: #0284c7;
+  background-color: #09eb2b;
   color: #ffffff;
 }
 

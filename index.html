@@ -14,21 +14,15 @@
     <!-- BARRA LATERAL (SIDEBAR) -->
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-header">
-        <h2>Panel Escolar</h2>
+        <h2>Panel</h2>
       </div>
 
       <nav class="sidebar-menu">
         <ul>
           <!-- Menú Usuarios con submenú desplegable -->
-          <li class="menu-item has-submenu">
-            <button class="submenu-btn" id="btnMenuUsuarios">
-              <span>Usuarios</span>
-              <span class="arrow">▾</span>
-            </button>
-            <ul class="submenu" id="submenuUsuarios">
-              <li><a href="#" id="linkMenuUsuarios">Captura de Usuario</a></li>
-            </ul>
-          </li>
+            <li class="menu-item">
+             <a href="#" class="menu-link" id="linkMenuUsuarios">Captura de Usuario</a>
+             </li>
           <!-- Enlace directo al formulario de alumnos -->
           <li class="menu-item">
             <a href="#" class="menu-link" id="linkMenuAlumnos">Alumnos</a>
@@ -50,7 +44,6 @@
         <!-- Menú de usuario a la derecha -->
         <div class="user-menu-container">
           <button class="user-btn" id="btnUserMenu">
-            <!-- Aquí JS colocará el nombre o correo del login -->
             <span id="userNameDisplay">Usuario Activo</span>
             <span class="arrow">▾</span>
           </button>
@@ -78,7 +71,7 @@
           <form id="formUsuario">
             <div class="form-group">
               <label for="nombreUsuario">Nombre de usuario:</label>
-              <input type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Ej. jperez" required>
+              <input type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Pedro" required>
             </div>
 
             <div class="form-group">
@@ -101,8 +94,8 @@
 
           <form id="formAlumno">
             <div class="form-group">
-              <label for="numControl">Número de Control (6 dígitos):</label>
-              <input type="text" id="numControl" name="numControl" maxlength="6" placeholder="123456" required>
+              <label for="numControl">Número de Control:</label>
+              <input type="text" id="numControl" name="numControl" maxlength="6" placeholder="231566" required>
             </div>
 
             <div class="form-group">

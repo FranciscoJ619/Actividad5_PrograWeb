@@ -33,16 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Submenú de Usuarios en Sidebar
-  const btnMenuUsuarios = document.getElementById("btnMenuUsuarios");
-  const submenuUsuarios = document.getElementById("submenuUsuarios");
-
-  if (btnMenuUsuarios && submenuUsuarios) {
-    btnMenuUsuarios.addEventListener("click", () => {
-      submenuUsuarios.classList.toggle("open");
-    });
-  }
-
   // Menú desplegable del usuario en Navbar
   const btnUserMenu = document.getElementById("btnUserMenu");
   const userDropdown = document.getElementById("userDropdown");
