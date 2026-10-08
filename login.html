@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logeo</title>
-    <link rel="stylesheet" href="css/login.css">
     <script src="https://cdn.jsdelivr.net/gh/FranciscoJ619/Actividad2_PrograWeb@main/js/utileria.js"></script>
+    <script src="js/login.js"></script>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
-    <div class="contenedor">
+    <div id="contenedor">
         <h1>Inicio de Sesión</h1>
-        <p class="subtitulo">Ingresa tus datos</p>
+        <p id="subtitulo">Ingresa tus datos</p>
 
-        <form class="formulario">
+        <form id="formulario">
             <div class="grupo">
                 <label for="correo">Correo electronico</label>
                 <input type="text" id="correo" placeholder="Ejemplo@email.com" required>
@@ -21,12 +22,11 @@
             <p id="mensaje"></p>
             <div class="grupo">
                 <label for="mensaje">Contraseña</label>
-                <input type="password" id="contrasena" placeholder="" required>
+                <input type="password" id="password" placeholder="" required>
             </div>
-            <button type="submit" onclick="validarPassword()" class="boton-enviar">
+            <button type="submit">
                 Iniciar Sesión <span>→</span>
             </button>
-            
         </form>
     </div>
 
