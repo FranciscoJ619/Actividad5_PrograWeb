@@ -92,8 +92,8 @@ Para `login.html`
 <!DOCTYPE html>
 <html lang="es">
 ```
-2. Luego designamos espacios para cada campo, haciendo las divisiones con ```<div>
-(img/capturaDiv.png)
+2. Luego designamos espacios para cada campo, haciendo las divisiones con <div>
+![Div](img/capturaDiv.png)
 3. Le damos id y class, a todas las etiquetas para organizarlas y poder añadirles un estilo facilmente
 4. Creamos el boton de tipo `submit` y le añadimos la funcion del archivo `login.js`
 
@@ -101,10 +101,10 @@ Para `login.js`
 1. Primero, extraemos los campos necesarios que vayamos a ocupar dentro de nuestro js como `mensaje` o `formulario`
 2. Le añadimos un eventListener al boton de tipo `submit` de `login.html` y creamos el escenario que puede tener
 al encontrar un correo invalido 
-(img/capturaCorreo.png)
+![Validacion correo](img/capturaCorreo.png)
 3. Luego creamos las validaciones para la contraseña, esta debe de mostrar los diferentes casos en los que le hagan
 falta caracteres a la contraseña ingresada para que sea valida
-(img/capturaCorreo.png)
+![Validacion contrasena](img/capturaContrasena.png)
 
 Para `sidebar`
 
