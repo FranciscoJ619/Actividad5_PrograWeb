@@ -24,29 +24,131 @@ capturadas, se muestra un modal para verificar que el alumno sea mayor de edad
 En la navbar se muestra el nombre de usuario con el correo que se haya iniciado sesion, y, al presionar el usuario
 se muestra una opcion de cerrar sesion para volver a `login.html`
 
+---
 
+## Documentacion
+
+El framewrok CSS utilizado fue:
+
+Dentro de `login.html` primero deben de hacerse las validaciones en orden para poder iniciar la sesion y entrar a
+`index.html`. Primero se valida el correo antes de entrar a la validacion de contraseña, si el correo no es correcto, no
+se comienza a validar la contraseña. Una vez validado correo se avanza a validar contraseña, y hasta no ser validada
+correctamente no se redirige a `index.html`.
+
+Para enviar el nombre de usuario a el archivo `index.html` se usa la funcion de `sessionStorage`, para almacenar la
+variable de correo y poder reutilizarla de nuevo llamandola con el mismo nombre que se guardo
+
+```javascript
+sessionStorage.setItem("usuarioLogueado", correo);
+```
+
+```javascript
+const usuarioSesion = sessionStorage.getItem("usuarioLogueado") || "Usuario Invitado";
+```
+
+Los metodos principales usados son:
+```javascript
+function validarLogin(){
+
+}
+```
+El cual es el que se encarga de las validaciones y manda a llamar a `libreria.js` para realizar las validaciones. 
+
+```javascript
+function validarCorreo(){
+
+}
+function validarPassword(){
+
+}
+function validarLongitud(){
+
+}
+```
+Son las funciones para validar los campos necesarios para el login, y `validarLongitud` para validar el
+numero de control en `index.html`
+
+```javascript
+if (formAlumno) {
+    formAlumno.addEventListener("submit", (e) => {
+    
+    }
+if (formUsuario) {
+    formUsuario.addEventListener("submit", (e) => {
+    
+    }
+```
+Se usa para las validaciones de captura y de registro de alumnos en `index.html`
+
+---
+
+---
+
+## Explicacion paso a paso
+
+Para `login.html`
+1. Primero se creo lo necesario para un html y esas cosas:
+```javascript
+<!DOCTYPE html>
+<html lang="es">
+```
+2. Luego designamos espacios para cada campo, haciendo las divisiones con ```<div>
+(img/capturaDiv.png)
+3. Le damos id y class, a todas las etiquetas para organizarlas y poder añadirles un estilo facilmente
+4. Creamos el boton de tipo `submit` y le añadimos la funcion del archivo `login.js`
+
+Para `login.js`
+1. Primero, extraemos los campos necesarios que vayamos a ocupar dentro de nuestro js como `mensaje` o `formulario`
+2. Le añadimos un eventListener al boton de tipo `submit` de `login.html` y creamos el escenario que puede tener
+al encontrar un correo invalido 
+(img/capturaCorreo.png)
+3. Luego creamos las validaciones para la contraseña, esta debe de mostrar los diferentes casos en los que le hagan
+falta caracteres a la contraseña ingresada para que sea valida
+(img/capturaCorreo.png)
+
+Para `sidebar`
+
+Para `navbar`
+
+---
 
 ---
 
 ## Capturas de pantalla
 
-A continuación se mostrarán capturas de pantalla que demuestran el funcionamiento de la librería desde el navegador.
+A continuación se mostrarán capturas de pantalla que demuestran el funcionamiento del Login
 
-### Campos a validar
+### Login.html con campos vacios
 
-![Validación de campos](img/captura1.png)
+![Login vacio](img/capturaLogeo.png)
 
-### Validación completa
+### Login.html con campos incorrectos
 
-![Validación correcta](img/captura2.png)
+![Validación incorrecta](img/capturaLogeoIncorrecto.png)
 
-### Login
+### Index.html
 
-![Login](img/captura3.png)
+![Logeo correcto](img/capturaIndex.png)
 
-### Login Exitoso
+### Captura de Usuario
 
-![Logeo](img/captura4.png)
+![Logeo](img/capturaCapturaUsuario.png)
+
+### Captura de Usuario correcta
+
+![Captura de Usuario Correcta](img/capturaCapturaUsuario.png)
+
+### Registro de Alumnos
+
+![Registro de Alumnos](img/capturaAlumnos.png)
+
+### Modal Edad
+
+![Modal Edad](img/capturaModalEdad.png)
+
+### Cerrar Sesion
+
+![Cerrar Sesion](img/capturaCerrarSesion.png)
 
 ---
 
