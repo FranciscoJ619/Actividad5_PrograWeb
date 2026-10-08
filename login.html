@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logeo</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/gh/FranciscoJ619/Actividad2_PrograWeb@main/js/utileria.js"></script>
 </head>
 
 <body>
@@ -17,14 +18,15 @@
                 <label for="correo">Correo electronico</label>
                 <input type="text" id="correo" placeholder="Ejemplo@email.com" required>
             </div>
-
+            <p id="mensaje"></p>
             <div class="grupo">
                 <label for="mensaje">Contraseña</label>
                 <input type="password" id="contrasena" placeholder="" required>
             </div>
-            <button type="submit" class="boton-enviar">
+            <button type="submit" onclick="validarPassword()" class="boton-enviar">
                 Iniciar Sesión <span>→</span>
             </button>
+            
         </form>
     </div>
 
