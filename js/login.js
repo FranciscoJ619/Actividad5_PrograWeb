@@ -36,6 +36,7 @@ function validarLogin(){
             case 6:
                 // Guardar el correo autenticado para leerlo en index.html
                 sessionStorage.setItem("usuarioLogueado", correo);
+                localStorage.setItem("inicioSesion", "true");
                 window.location.href = "index.html";
                 break;
         }

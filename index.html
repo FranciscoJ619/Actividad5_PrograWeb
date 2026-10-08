@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Panel Principal</title>
   <link rel="stylesheet" href="css/index.css">
+  <script>
+    if (localStorage.getItem("inicioSesion") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
 </head>
 <body>
 
