@@ -118,11 +118,14 @@ Para `sidebar`
 
 Para `navbar`
 1. Se ubicó en la parte superior dentro de un contenedor `<header class="navbar">` distribuido con Flexbox (`justify-content: space-between`).
+![navbarcss](img/navbarcss.png)
 ![navbar](img/gnar.png)
 2. A la izquierda se integró el botón hamburguesa (`#btnToggleSidebar`), encargado de alternar la visibilidad del sidebar mediante un escuchador de eventos.
 ![navbar](img/navbar.png)
 3. A la derecha se configuró un menú de usuario interactivo (`.user-menu-container`), el cual lee dinámicamente el correo almacenado en `sessionStorage` tras el inicio de sesión y lo muestra en `#userNameDisplay`.
+![Cerrar Sesion](img/capturadisplay.png)
 4. Al hacer clic sobre el nombre del usuario se despliega un dropdown (`.user-dropdown`) con la opción de **Cerrar sesión**, la cual elimina la clave `usuarioLogueado` de `sessionStorage` y redirige nuevamente a `login.html`.
+![Cerrar Sesion](img/capturaCerrarSesion.png)
 
 ---
 
