@@ -34,8 +34,7 @@ function validarLogin(){
                 mensaje.textContent = "La contraseña debe tener al menos 8 caracteres";
                 return;
             case 6:
-                mensaje.textContent = "Inicio de sesión correcto";
-                return;
+                window.location.href = "index.html";
         }
     });
 }
