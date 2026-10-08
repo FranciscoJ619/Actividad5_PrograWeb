@@ -126,6 +126,7 @@ Para `navbar`
 ![Cerrar Sesion](img/capturadisplay.png)
 4. Al hacer clic sobre el nombre del usuario se despliega un dropdown (`.user-dropdown`) con la opción de **Cerrar sesión**, la cual elimina la clave `usuarioLogueado` de `sessionStorage` y redirige nuevamente a `login.html`.
 ![Cerrar Sesion](img/capturaCerrarSesion.png)
+![cerrar sesion](img/capturasesion.png)
 
 ---
 
