@@ -34,7 +34,10 @@ function validarLogin(){
                 mensaje.textContent = "La contraseña debe tener al menos 8 caracteres";
                 return;
             case 6:
+                // Guardar el correo autenticado para leerlo en index.html
+                sessionStorage.setItem("usuarioLogueado", correo);
                 window.location.href = "index.html";
+                break;
         }
     });
 }

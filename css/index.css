@@ -295,3 +295,26 @@ body {
   display: flex;
   justify-content: center;
 }
+
+/* Ocultar secciones */
+.oculto {
+  display: none !important;
+}
+
+/* Estilo para la tarjeta de bienvenida inicial */
+.mensaje-bienvenida {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.mensaje-bienvenida h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #1e293b;
+}
+
+.mensaje-bienvenida p {
+  color: #64748b;
+  font-size: 1.05rem;
+}
