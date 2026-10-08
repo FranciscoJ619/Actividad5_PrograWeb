@@ -115,6 +115,36 @@ Para `sidebar`
 2. Se integró una clase `.collapsed` que oculta o muestra el panel lateral al interactuar con el botón hamburguesa del navbar.
 ![clase collapsed](img/collapse.png)
 3. Los enlaces del menú se conectaron mediante eventos en `index.js` para alternar la visualización entre la pantalla de bienvenida y los formularios sin necesidad de recargar la página.
+```javascript
+  const seccionBienvenida = document.getElementById("seccion-bienvenida");
+  const seccionUsuarios = document.getElementById("seccion-usuarios");
+  const seccionAlumnos = document.getElementById("seccion-alumnos");
+
+  const linkMenuUsuarios = document.getElementById("linkMenuUsuarios");
+  const linkMenuAlumnos = document.getElementById("linkMenuAlumnos");
+
+  function mostrarSeccion(seccionActiva) {
+    seccionBienvenida.classList.add("oculto");
+    seccionUsuarios.classList.add("oculto");
+    seccionAlumnos.classList.add("oculto");
+
+    seccionActiva.classList.remove("oculto");
+  }
+
+  if (linkMenuUsuarios) {
+    linkMenuUsuarios.addEventListener("click", (e) => {
+      e.preventDefault();
+      mostrarSeccion(seccionUsuarios);
+    });
+  }
+
+  if (linkMenuAlumnos) {
+    linkMenuAlumnos.addEventListener("click", (e) => {
+      e.preventDefault();
+      mostrarSeccion(seccionAlumnos);
+    });
+  }
+```
 
 Para `navbar`
 1. Se ubicó en la parte superior dentro de un contenedor `<header class="navbar">` distribuido con Flexbox (`justify-content: space-between`).
